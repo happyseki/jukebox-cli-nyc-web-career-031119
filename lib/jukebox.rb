@@ -27,7 +27,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   response = gets.chomp
-   if songs.include?(response.downcase)  
+   if songs.include?(response)  
      puts "Playing <#{response}>"
      elsif response.to_i > 0 && response.to_i <= songs.length
       puts "Playing <#{songs[response.to_i - 1]}>"
